@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    background-color: hsl(30, 54%, 90%);
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2%;
+    max-width: 90%;
+}
+
+.omelette-image {
+    padding: 2.5rem 2.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.omelette-image img{
+    width: 40rem;
+    max-width: 100%;
+    border-radius: 5%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 45rem;
+    padding: 2.5rem;
+    border-radius: 2%;
+    font-family: outfit;
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+}
+
+.content h1 {
+    font-family: young serif;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
+
+.content h2 {
+    color: hsl(14, 45%, 36%);
+    font-weight: 400;
+    font-family: young serif;
+}
+
+strong {
+    color: hsl(30, 10%, 34%);
+    font-weight: 600;
+}
+
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 1rem 2rem;
+    border-radius: 5%;;
+}
+
+.preparation ul {
+    padding-left: 1.25rem;
+}
+
+.preparation li {
+    margin: 1rem 0;
+    padding-left: 1rem;
+}
+
+.preparation li::marker {
+    font-size: .75rem;
+    color: hsl(332, 51%, 32%);
+}
+
+.preparation h3 {
+    color: hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+.ingredients {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 1rem;
+}
+
+.ingredients ul {
+    padding-left: 1.25rem;
+}
+
+.ingredients li{
+    list-style: square;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.ingredients li::marker {
+    color: hsl(14, 45%, 36%);
+    font-size: .625rem;
+}
+
+.instructions {
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+    padding-bottom: 1rem;
+}
+
+.instructions ol {
+    padding-left: 1.25rem;
+}
+
+.instructions li {
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.instructions li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+
+.nutrition-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 0;
+}
+
+.nutrition-table li {
+    padding: .5rem;
+    list-style: none;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.nutrition-table li:nth-child(odd) {
+    padding-left: 2rem;
+}
+
+.nutrition strong{
+    color: hsl(14, 45%, 36%);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        min-width: 100%;
+        border-radius: 0%;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .omelette-image {
+        padding: 0;
+        width: 100%;
+    }
+
+    .container img {
+        border-radius: 0%;
+        width: 100%;
+    }
+
+    .content {
+        margin: 0;
+    }
+
+    .content h1 {
+        margin: 0;
+    }
+
+    .preparation {
+        margin: 1rem 0;
+    }
+}
